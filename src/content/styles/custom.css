@@ -1,0 +1,42 @@
+@media (min-width: 992px) {
+  #mainnav {
+    position: sticky;
+    top: 0;
+  }
+  #sidenav {
+    position: sticky;
+    top: 110px;
+  }
+}
+
+h1 {
+  border-bottom: 1px solid #ccc;
+}
+
+h2 {
+  color: #333;
+  margin-top: 3rem;
+  border-bottom: 1px solid #ddd;
+}
+
+h3 {
+  color: #444;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+h4, h5, h6 {
+  color: #444;
+  margin-top: 1.5rem;
+}
+
+.pl-3 {
+  padding-left: 3rem !important;
+}
+
+pre {
+  background: #eee;
+  border: 1px solid #bbb;
+  padding: .75rem;
+  border-radius: 3px;
+}

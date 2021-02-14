@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Set the base URL for all relative URLs within the document -->
+  <base href="/">
+
+  <!-- Short description of the document (limit to 150 characters) This content *may* be used as a part of search engine results. -->
+  <meta name="description" content="An enterprise-friendly TypeScript application framework">
+
+  <!-- Control the behavior of search engine crawling and indexing -->
+  <meta name="robots" content="index,follow">
+  <!-- All Search Engines -->
+  <meta name="googlebot" content="index,follow">
+  <!-- Google Specific -->
+
+  <!-- Tells Google not to show the sitelinks search box -->
+  <meta name="google" content="nositelinkssearchbox">
+  <!-- Tells Google not to provide a translation for this document -->
+  <meta name="google" content="notranslate">
+
+  <!-- Identify the software used to build the document, Eleventy ftw! -->
+  <meta name="generator" content="eleventy">
+
+  <!-- Disable automatic detection and formatting of possible phone numbers -->
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Helps prevent duplicate content issues -->
+  <link rel="canonical" href="https://www.momentumframework.org/">
+
+  <title>
+    {{{ title }}}
+  </title>
+
+  <!-- Links to information about the author(s) of the document -->
+  <link rel="author" href="humans.txt">
+
+  <!-- Apple Touch Icon (reuse 192px icon.png) & standard favicons -->
+  <link rel="apple-touch-icon" href="/content/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/content/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/content/images/favicon.png">
+
+  <!-- Facebook Open Graph meta -->
+  <meta property="og:url" content="https://www.momentumframework.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A modern TypeScript framework for enterprise applications in Deno.">
+  
+  <meta property="og:description" content="An enterprise-friendly TypeScript application framework"/>
+  <meta property="og:site_name" content="Momentum Framework">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:author" content="">
+
+  <!-- Twitter Open Graph meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+
+  <!-- disallow Twitter from using your site's info for personalization purposes -->
+  <meta name="twitter:dnt" content="on">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="/content/styles/bootstrap.theme.css">
+  <link rel="stylesheet" href="/content/styles/custom.css">
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/content/images/logo-128.png" style="max-height: 56px;">
+      </a>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-3">
+        <div id="sidenav" class="list-group mb-5">
+          <a href="/" class="fw-bold list-group-item list-group-item-action">
+            Introduction
+          </a>
+          <a href="/docs/getting-started.html" class="fw-bold list-group-item list-group-item-action">
+            Getting Started
+          </a>
+          <a href="/docs/application-types.html" class="fw-bold list-group-item list-group-item-action">
+            Application Types
+          </a>
+          <a href="/docs/application-types.html#about-platforms" class="list-group-item list-group-item-action pl-3">
+            Platforms
+          </a>
+          <a href="/docs/application-types.html#console-applications" class="list-group-item list-group-item-action pl-3">
+            Console Applications
+          </a>
+          <a href="/docs/application-types.html#web-applications" class="list-group-item list-group-item-action pl-3">
+            Web Applications
+          </a>
+          <a href="/docs/concepts.html" class="fw-bold list-group-item list-group-item-action">
+            Concepts
+          </a>
+          <a href="/docs/concepts.html#modules" class="list-group-item list-group-item-action pl-3">
+            Modules
+          </a>
+          <a href="/docs/concepts.html#providers" class="list-group-item list-group-item-action pl-3">
+            Providers
+          </a>
+          <a href="/docs/concepts.html#controllers" class="list-group-item list-group-item-action pl-3">
+            Controllers
+          </a>
+          <a href="/docs/concepts.html#filters" class="list-group-item list-group-item-action pl-3">
+            Filters
+          </a>
+          <a href="/docs/concepts.html#middleware" class="list-group-item list-group-item-action pl-3">
+            Middleware
+          </a>
+          <a href="/docs/techniques.html" class="fw-bold list-group-item list-group-item-action">
+            Techniques
+          </a>
+          <a href="/docs/techniques.html#mvc" class="list-group-item list-group-item-action pl-3">
+            MVC
+          </a>
+          <a href="/docs/techniques.html#static-files" class="list-group-item list-group-item-action pl-3">
+            Static Files
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-9">
+        {{{ renderBody }}}
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center my-5">
+    <div>
+      <a style="font-weight: bold; color: #38bd47; text-decoration: none;" href="https://www.github.com/momentumframework" target="_blank">
+        GitHub
+      </a>
+      &nbsp;&nbsp;&nbsp;
+      <a style="font-weight: bold; color: #38bd47; text-decoration: none;" href="https://www.github.com/mvfdeno" target="_blank">
+        Twitter
+      </a>
+    </div>
+    <div>
+      Created by Lenny Kean 2021
+    </div>
+  </div>
+</body>
+</html>
