@@ -3,3 +3,4 @@ scripts:
   start:dev: deno run -A --watch --unstable -c tsconfig.json src/main.ts
   test: deno test --allow-net src/
   format: deno fmt src/
+  deploy: deno run -A ./deploy.ts

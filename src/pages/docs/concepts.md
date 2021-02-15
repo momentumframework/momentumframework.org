@@ -37,7 +37,7 @@ Documentation coming soon.
 
 ### @Injectable()
 
-`@Injectable()` marks a class as Provider. A provider is an injectable dependency that is added to the Momentum dependency tree. Providers can be services, factories, repositories, helper utilities, or anything of that nature.
+`@Injectable()` marks a class as a provider. A provider is an injectable dependency that is added to the Momentum dependency tree. Providers can be services, factories, repositories, helper utilities, or anything of that nature.
 
 #### Module Providers and Global Providers
 
@@ -205,6 +205,7 @@ export class BicycleController {
     return []
   }
 }
+```
 
 ##### @Body()
 

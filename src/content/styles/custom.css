@@ -11,6 +11,7 @@
 
 h1 {
   border-bottom: 1px solid #ccc;
+  font-weight: bold;
 }
 
 h2 {
@@ -19,10 +20,15 @@ h2 {
   border-bottom: 1px solid #ddd;
 }
 
-h3 {
+.h3, h3 {
+  font-size: calc(1.2rem + .4vw);
   color: #444;
   margin-top: 1.5rem;
   border-bottom: 1px solid #ddd;
+}
+
+.h4, h4 {
+  font-size: calc(1.1rem + .2vw);
 }
 
 h4, h5, h6 {

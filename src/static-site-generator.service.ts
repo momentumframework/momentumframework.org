@@ -43,6 +43,11 @@ export class StaticSiteGeneratorService {
     return Marked.parse(markdown);
   }
 
+  /**
+   * "I want Handlebars!"
+   * "We have Handlebars at home."
+   * Handlebars at home:
+   */
   private applyTemplating(title: string, body: string, layoutFile: string) {
     return this.getLayout(layoutFile)
       .replaceAll("{{{ title }}}", title)
